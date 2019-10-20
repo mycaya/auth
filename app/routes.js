@@ -10,6 +10,10 @@ module.exports = function(app, passport) {
         res.render('index.ejs'); // load the index.ejs file
     });
 
+    app.get('/privacy', function(req, res) {
+        res.render('privacy.ejs'); // load the index.ejs file
+    });
+
     // route for showing the profile page
     app.get('/profile', isLoggedIn, function(req, res) {
         res.render('profile.ejs', {

@@ -2,7 +2,7 @@
 
 // load all the things we need
 //var LocalStrategy = require('passport-local').Strategy;
-//var FacebookStrategy = require('passport-facebook').Strategy;
+var FacebookStrategy = require('passport-facebook').Strategy;
 var GoogleStrategy = require('passport-google-oauth').OAuth2Strategy;
 // var InstagramStrategy = require('passport-instagram').Strategy;
 //var GithubStrategy = require('passport-github2').Strategy;
@@ -27,7 +27,7 @@ module.exports = function(passport) {
          done(err, user);
       });
    });
-/*
+
    // =========================================================================
    // FACEBOOK ================================================================
    // =========================================================================
@@ -84,7 +84,7 @@ module.exports = function(passport) {
             });
          });
 
-      })); */
+      })); 
    // =========================================================================
    // GOOGLE ==================================================================
    // =========================================================================
