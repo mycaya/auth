@@ -39,7 +39,13 @@ module.exports = function(passport) {
    fbStrategy.callbackURL = 'https://figeur.com/auth/facebook/callback';
    fbStrategy.profileURL = 'https://graph.facebook.com/v2.5/me?fields=first_name,last_name,email';
    fbStrategy.passReqToCallback = true; // allows us to pass in the req from our route (lets us check if a user is logged in or not)
-   passport.use(new FacebookStrategy(fbStrategy,
+   passport.use(new FacebookStrategy({
+      clientID: '2424070964534047',
+      clientSecret: '2424070964534047',
+      callbackURL: 'https://figeur.com/auth/facebook/callback',
+      profileFields: ['name', 'email', 'link', 'locale', 'timezone', 'gender'],
+      passReqToCallback: true
+    },
       function(req, token, refreshToken, profile, done) {
 
          var apiPath = '/me/friends';
