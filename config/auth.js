@@ -6,7 +6,7 @@ module.exports = {
     'facebookAuth': {
         'clientID': '2424070964534047', // your App ID
         'clientSecret': 'f1655295e9339e1ced5268a05efb4983', // your App Secret
-        'callbackURL': 'http://localhost:3000/auth/facebook/callback',
+        'callbackURL': 'https://figeur.com/auth/facebook/callback',
         'profileURL': 'https://graph.facebook.com/v2.5/me?fields=first_name,last_name,email'
 
     },
