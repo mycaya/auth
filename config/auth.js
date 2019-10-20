@@ -14,7 +14,7 @@ module.exports = {
     'googleAuth': {
         'clientID': '737194955216-l3ajm9cqmnk60f0e30pjtg6vuu5ms003.apps.googleusercontent.com', // your Client ID
         'clientSecret': 'Gl0y4_KjhUk47-6nw4U89aDE', // your Client Secret
-        'callbackURL': 'http://localhost:3000/auth/google/callback'
+        'callbackURL': 'http://figeur.com/auth/google/callback'
     } /*,
 
     // 'instagramAuth': {
